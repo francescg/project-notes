@@ -1,4 +1,6 @@
 from django.conf.urls.defaults import patterns, include, url
+from views import logout_page
+from portal.views import main_page
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -23,11 +25,10 @@ urlpatterns = patterns('',
     (r'^$', main_page),
 
     # Web portal.
-    (r'^portal/', include('portal.urls')),
+    #(r'^portal/', include('portal.urls')),
 
     # Serve static content.
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': 'static'}),
-)
 
 )

@@ -106,6 +106,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    '/home/francesc/work/sintdata/django/gestor/templates',
 )
 
 INSTALLED_APPS = (
@@ -119,7 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
 #    'django.contrib.admindocs',
-    'todolist',
+    'notes',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -144,3 +145,10 @@ LOGGING = {
         },
     }
 }
+
+
+# URL of the login page.
+LOGIN_URL = '/login/'
+
+# Make this unique, and don't share it with anybody.
+SECRET_KEY = 'somerandomnumbers'
